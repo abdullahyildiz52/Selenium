@@ -11,6 +11,7 @@ public class C01_driverOlusturma {
         // bu class'a kullanilacak WebDriver'i ve
         // bu driver ile ilgili dosyalari nerede bulabilecegimizi tanimlar
         WebDriver driver = new ChromeDriver();
+
         // driver objesi olusturur,
         // bu obje bizim icin istedigimiz web sayfalarina gidebilecek
         // o sayfalarda istedigimiz islemi yapabilecek ozelliklerdedir.
