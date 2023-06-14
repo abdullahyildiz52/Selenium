@@ -28,6 +28,10 @@ public class C07_DriverMethodlari {
         String expectedUrlIcerik="facebook";
         String actualUrl=driver.getCurrentUrl();
 
+        if (expectedUrlIcerik.contains("facebook")){
+            System.out.println();
+        }
+
         // 4.https://www.walmart.com/ sayfasina gidin.
 
         //5. Sayfa basliginin “Walmart.com” icerdigini dogrulayin.
