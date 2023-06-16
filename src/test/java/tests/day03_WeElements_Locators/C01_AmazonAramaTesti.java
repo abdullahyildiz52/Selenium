@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class C01_AmazonAramaTesti {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver");
+        System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

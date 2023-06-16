@@ -7,7 +7,7 @@ public class C01_driverOlusturma {
     public static void main(String[] args) {
 
 
-        System.setProperty("Webdriver.chrome.driver", "src/resources/chromedriver");
+        System.setProperty("Webdriver.chrome.driver", "src/resources/chromedriver.exe");
         // bu class'a kullanilacak WebDriver'i ve
         // bu driver ile ilgili dosyalari nerede bulabilecegimizi tanimlar
         WebDriver driver = new ChromeDriver();

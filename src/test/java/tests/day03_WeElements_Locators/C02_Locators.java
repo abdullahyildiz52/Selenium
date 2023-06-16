@@ -25,7 +25,7 @@ public class C02_Locators {
                     7- By.xPath
                     8- By.cssSelector
          */
-        System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver");
+        System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

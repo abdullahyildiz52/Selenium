@@ -9,7 +9,7 @@ import java.time.Duration;
 
 public class C05_DriverManageMethodlar {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("Webdriver.chrome.driver","src/resource/chromedriver");
+        System.setProperty("Webdriver.chrome.driver","src/resource/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
