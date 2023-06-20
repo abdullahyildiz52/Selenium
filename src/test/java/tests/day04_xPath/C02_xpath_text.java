@@ -7,8 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C01_xPath {
+public class C02_xpath_text {
     public static void main(String[] args) throws InterruptedException {
+
+        // bir onceki class ta ki locate leri text ile yapalm
 
 
         System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
@@ -21,10 +23,10 @@ public class C01_xPath {
         Thread.sleep(3000);
 
         // 2- Add Element butonuna basin
-        driver.findElement(By.xpath("//button[@onclick='addElement()']")).click();
+        driver.findElement(By.xpath("//*[text()='Add Element']")).click();
 
         // 3- Delete butonu’nun gorunur oldugunu test edin
-        WebElement deleteTextBox= driver.findElement(By.xpath("//button[@class='added-manually']"));
+        WebElement deleteTextBox= driver.findElement(By.xpath("//*[text()='Delete']"));
         if (deleteTextBox.isDisplayed()) {
             System.out.println("Delete kutusu goruntuleme testi passed");
         } else {
@@ -36,7 +38,7 @@ public class C01_xPath {
         // 4- Delete tusuna basin
         deleteTextBox.click();
         // 5- “Add/Remove Elements” yazisinin gorunur oldugunu test edin
-        WebElement addRemoveYaziElementi=driver.findElement(By.xpath("//h3"));
+        WebElement addRemoveYaziElementi=driver.findElement(By.xpath("//*[text()='Add/Remove Elements']"));
         if (addRemoveYaziElementi.isDisplayed()){
             System.out.println("addRemove yazi elementi gorunum testi Passed");
         }else {
@@ -47,5 +49,4 @@ public class C01_xPath {
         Thread.sleep(2000);
         driver.close();
     }
-
 }
